@@ -3,7 +3,7 @@
 
 ![cover letter fig 1](https://github.com/user-attachments/assets/73e19c35-5de9-4bb6-9bf5-4cf90350b000)
 
-To run the single-cell RNA-seq pipeline, we suggest to install Anaconda and create a new environment using the sc.yml configuration to install all related packages.
+To run the single-cell RNA-seq pipeline, we suggest to install Anaconda on a Windows PC and create a new environment using the sc.yml configuration to install all related packages.
 ```
 conda env create -f sc.yml -n sc
 conda activate sc
