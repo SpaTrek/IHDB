@@ -1,4 +1,5 @@
 # idCHD
+## Due to the typhoon 'BEBINCA', our website may be temporarily closed due to a power outage. If you encounter this situation, please try again later!
 ```diff
 - The server is under updating these months. If you cannot access to the website, please retry a few hours later.
 ```
