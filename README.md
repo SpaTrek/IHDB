@@ -71,8 +71,9 @@ Before preprocessing scRNA-seq data, users should reformat and organize their sc
 ```
 Put all dataset folders under the same folder. Run "preprocess_QC.ipynb".  
 
-For single-cell analysis of individual samples, run "Annotation.py" first, then "HVG.R", finally "PATHWAY.R", "NMF.R", and "run_EMBEDandCCI.py".
-For meta-program analysis, please refer to https://github.com/tiroshlab/3ca/tree/main/ITH_hallmarks
+For single-cell analysis of individual samples, run "Annotation.py" first, then "HVG.R", finally "PATHWAY.R", "NMF.R", and "run_EMBEDandCCI.py".  
+For meta-program analysis, run "generate_robust_programs.ipynb" first, then run "generate_meta_programs.R", which is modified from the orginal "Generate_Meta_Programs.R".  
+As we only provide the modified code for meta-program generation, for complete and orginal codes please refer to https://github.com/tiroshlab/3ca/tree/main/ITH_hallmarks
 
 # About
 Should you have any questions, please feel free to contact the auther, Mr. Tianhao Wang (woloorn@zju.edu.cn)
