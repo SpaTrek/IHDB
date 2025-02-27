@@ -23,7 +23,7 @@ zinbwave==1.28.0
 caret==7.0-1  
 msigdbr==7.5.1  
 gsdensity==0.1.3  
-After that, follow the instructions in the vignette file to build single-cell database.
+After that, follow the instructions in the vignette file to build single-cell database.  
 For meta-program analysis, please refer to https://github.com/tiroshlab/3ca/tree/main/ITH_hallmarks
 
 # About
