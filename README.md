@@ -11,6 +11,7 @@ conda env create -f sc.yml -n sc
 conda activate sc
 ```
 Besides, an R environment should be configured to include all related packages. The required R packages include:  
+```
 NMF==0.27  
 scry==1.16.0  
 scran==1.32.0  
@@ -23,7 +24,57 @@ zinbwave==1.28.0
 caret==7.0-1  
 msigdbr==7.5.1  
 gsdensity==0.1.3  
-After that, follow the instructions in the vignette file to build single-cell database.  
+```
+Before preprocessing scRNA-seq data, users should reformat and organize their scRNA-seq matrix data into one of the following structures:
+1. 10x
+   GSEXXXXXX
+    ├─GSMXXXXXXX
+    │      barcodes.tsv.gz
+    │      features.tsv.gz
+    │      matrix.mtx.gz
+    │
+    ├─GSMXXXXXXX
+    │      barcodes.tsv.gz
+    │      features.tsv.gz
+    │      matrix.mtx.gz
+    ...
+
+2. 10x tiled
+   GSEXXXXXX
+       GSMXXXXXXX_barcodes.tsv.gz
+       GSMXXXXXXX_features.tsv.gz
+       GSMXXXXXXX_matrix.mtx.gz
+       GSMXXXXXXX_barcodes.tsv.gz
+       GSMXXXXXXX_features.tsv.gz
+       GSMXXXXXXX_matrix.mtx.gz
+       ...
+
+3. csv
+   GSEXXXXXX
+        GSMXXXXXXX.csv
+        GSMXXXXXXX.csv
+        ...
+   
+5. txt
+   GSEXXXXXX
+        GSMXXXXXXX.txt
+        GSMXXXXXXX.txt
+        ...
+   
+6. h5
+   GSEXXXXXX
+        GSMXXXXXXX.h5
+        GSMXXXXXXX.h5
+        ...
+   
+7. h5ad
+   GSEXXXXXX
+        GSMXXXXXXX.h5ad
+        GSMXXXXXXX.h5ad
+        ...
+   
+Put all dataset folders under the same folder. Run "preprocess.ipynb".
+
 For meta-program analysis, please refer to https://github.com/tiroshlab/3ca/tree/main/ITH_hallmarks
 
 # About
