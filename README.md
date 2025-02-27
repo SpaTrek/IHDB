@@ -10,10 +10,10 @@ To run the single-cell RNA-seq pipeline, we suggest to install Anaconda on Windo
 conda env create -f sc.yml -n sc
 conda activate sc
 ```
-Besides, an R environment should be configured to include all related packages. The required R packages include:
-NMF==0.27
-scry==1.16.0
-scran==1.32.0
-Biobase==2.62.0
-BiocParallel==1.36.0
+Besides, an R environment should be configured to include all related packages. The required R packages include:  
+NMF==0.27  
+scry==1.16.0  
+scran==1.32.0  
+Biobase==2.62.0  
+BiocParallel==1.36.0  
 After that, follow the instructions in the vignette file to build the necessary files for single-cell database.
