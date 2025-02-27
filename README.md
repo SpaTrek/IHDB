@@ -25,56 +25,57 @@ caret==7.0-1
 msigdbr==7.5.1  
 gsdensity==0.1.3  
 ```
-Before preprocessing scRNA-seq data, users should reformat and organize their scRNA-seq matrix data into one of the following structures:
-1. 10x
-   GSEXXXXXX
-    ├─GSMXXXXXXX
-    │      barcodes.tsv.gz
-    │      features.tsv.gz
-    │      matrix.mtx.gz
-    │
-    ├─GSMXXXXXXX
-    │      barcodes.tsv.gz
-    │      features.tsv.gz
-    │      matrix.mtx.gz
-    ...
+Before preprocessing scRNA-seq data, users should reformat and organize their scRNA-seq matrix data into one of the following structures:  
+1. 10x  
+   GSEXXXXXX  
+    ├─GSMXXXXXXX  
+    │      barcodes.tsv.gz  
+    │      features.tsv.gz  
+    │      matrix.mtx.gz  
+    │  
+    ├─GSMXXXXXXX  
+    │      barcodes.tsv.gz  
+    │      features.tsv.gz  
+    │      matrix.mtx.gz  
+    ...  
+  
+2. 10x tiled  
+   GSEXXXXXX  
+       GSMXXXXXXX_barcodes.tsv.gz  
+       GSMXXXXXXX_features.tsv.gz  
+       GSMXXXXXXX_matrix.mtx.gz  
+       GSMXXXXXXX_barcodes.tsv.gz  
+       GSMXXXXXXX_features.tsv.gz  
+       GSMXXXXXXX_matrix.mtx.gz  
+       ...  
+  
+3. csv  
+   GSEXXXXXX  
+        GSMXXXXXXX.csv  
+        GSMXXXXXXX.csv  
+        ...  
+     
+5. txt  
+   GSEXXXXXX  
+        GSMXXXXXXX.txt  
+        GSMXXXXXXX.txt  
+        ...  
+     
+6. h5  
+   GSEXXXXXX  
+        GSMXXXXXXX.h5  
+        GSMXXXXXXX.h5  
+        ...  
+     
+7. h5ad  
+   GSEXXXXXX  
+        GSMXXXXXXX.h5ad  
+        GSMXXXXXXX.h5ad  
+        ...  
+  
+Put all dataset folders under the same folder. Run "preprocess_QC.ipynb".  
 
-2. 10x tiled
-   GSEXXXXXX
-       GSMXXXXXXX_barcodes.tsv.gz
-       GSMXXXXXXX_features.tsv.gz
-       GSMXXXXXXX_matrix.mtx.gz
-       GSMXXXXXXX_barcodes.tsv.gz
-       GSMXXXXXXX_features.tsv.gz
-       GSMXXXXXXX_matrix.mtx.gz
-       ...
-
-3. csv
-   GSEXXXXXX
-        GSMXXXXXXX.csv
-        GSMXXXXXXX.csv
-        ...
-   
-5. txt
-   GSEXXXXXX
-        GSMXXXXXXX.txt
-        GSMXXXXXXX.txt
-        ...
-   
-6. h5
-   GSEXXXXXX
-        GSMXXXXXXX.h5
-        GSMXXXXXXX.h5
-        ...
-   
-7. h5ad
-   GSEXXXXXX
-        GSMXXXXXXX.h5ad
-        GSMXXXXXXX.h5ad
-        ...
-   
-Put all dataset folders under the same folder. Run "preprocess.ipynb".
-
+For single-cell analysis of individual samples, run "Annotation.py" first, then "HVG.R", finally "PATHWAY.R", "NMF.R", and "run_EMBEDandCCI.py".
 For meta-program analysis, please refer to https://github.com/tiroshlab/3ca/tree/main/ITH_hallmarks
 
 # About
