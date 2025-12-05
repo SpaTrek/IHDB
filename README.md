@@ -78,7 +78,7 @@ For spatial analysis, just run each spatial analysis script individually.
 As we only provide the modified code for meta-program generation, for complete and orginal codes please refer to https://github.com/tiroshlab/3ca/tree/main/ITH_hallmarks
 
 # About
-SsIHDB has been published in *APSB*. Please refer to *Wang Tianhao et al., An integrated resource for ischemic heart disease defines hallmarks and heterogeneity across time and 
-space, Acta Pharmaceutica Sinica B, https://doi.org/10.1016/j.apsb.2025.11.020*。
+SsIHDB has been published in *APSB*. Please refer to _Wang Tianhao et al., An integrated resource for ischemic heart disease defines hallmarks and heterogeneity across time and 
+space, Acta Pharmaceutica Sinica B, https://doi.org/10.1016/j.apsb.2025.11.020_.
 
 Should you have any questions, please feel free to contact the author, Mr. Tianhao Wang (woloorn@zju.edu.cn)
